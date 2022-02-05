@@ -52,12 +52,12 @@ console.log("set :>> ", set);
 
 const arrNumb = [1, 6, 9, 4, 9, 1, 5, 6];
 
-const setNumb = new Set(arrNumb);
+const setNumb = [...new Set(arrNumb)];
 console.log("setNumb :>> ", setNumb);
 
 const arrNumbTwo = [2, 10, 11];
 
-const setUniqueNumb = new Set([...arrNumb, ...arrNumbTwo]);
+const setUniqueNumb = [...new Set([...arrNumb, ...arrNumbTwo])];
 console.log("setUniqueNumb :>> ", setUniqueNumb);
 
 console.groupEnd();
